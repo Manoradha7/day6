@@ -141,7 +141,7 @@ console.log(numsArr);
 
 var numsArr = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
 var str_all=[];
-for (var i = numsArr.length; i > 0 ; i--) {
+for (var i = numsArr.length-1; i > 0 ; i--) {
  let inner_array = numsArr[i];
  for(var j = inner_array.length; j > 0 ;j-- ){
      str_all.push(inner_array[j])}
@@ -160,13 +160,13 @@ var sum_even=0;
 for (var i = 0; i < numsArr.length; i++) {
  var inner_array = numsArr[i];
  for(var j = 0 ; j < inner_array.length;j++ ){
- if(numsArr[j]%2 ==0)
+ if(inner_array[j]%2 ==0)
  {
- sum_odd += numsArr[j]
+ sum_odd +=inner_array[j]
  }
  else
  {
- sum_even += numsArr[j]
+ sum_even += inner_array[j]
  }
 }
 }
